@@ -26,3 +26,5 @@
 String API学习
 ### Day 11:
 集合练习与学生管理系统实现
+### Day 12:
+static&继承
