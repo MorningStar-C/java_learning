@@ -1,6 +1,7 @@
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.MonthDay;
 
 public class LocalDateDemo {
     public static void main(String[] args) {
@@ -39,5 +40,22 @@ public class LocalDateDemo {
 
         LocalDate minusLocalDate = ldDate.minusYears(1);
         System.out.println(minusLocalDate);
+
+        LocalDate plusLocalDate = ldDate.plusYears(2);
+        System.out.println(plusLocalDate);
+
+        LocalDate birthDate = LocalDate.of(2000,1,1);
+        LocalDate nowDate2 = LocalDate.now();
+
+        MonthDay birMD = MonthDay.of(birthDate.getMonthValue(), birthDate.getDayOfMonth());
+        MonthDay nowMd = MonthDay.from(nowDate2);
+
+        System.out.println(birMD.equals(nowMd));
+
+        System.out.println("===========================");
+
+        
+
+
     }
 }
